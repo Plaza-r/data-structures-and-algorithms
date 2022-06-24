@@ -78,6 +78,7 @@ const mapTwoToThe = (arr) => {
   let eachArr2 = arr.map(element => Math.pow(2,element));
   return eachArr2;
 };
+//fixing merge
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
