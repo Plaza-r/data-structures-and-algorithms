@@ -71,6 +71,7 @@ const updateNumbers = (obj) => {
   }
   return combine;
 };
+// checking if works
 
 
 
@@ -158,7 +159,7 @@ const hasChildrenValues = (arr, character) => {
 
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* ----------------------------------------------------git --------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
 Write a function named hasChildrenEntries that is similar to your hasChildrenValues function from challenge 4, but uses the data's entries instead of its values.
@@ -167,6 +168,7 @@ The input and output of this function are the same as the input and output from 
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenEntries = (arr, character) => {
+  //need to figure out
   // Solution code here...
 };
 
