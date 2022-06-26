@@ -126,6 +126,9 @@ const createList = (availableItems) => {
   });
   return newArr;
 };
+//testing
+//testing 2
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
