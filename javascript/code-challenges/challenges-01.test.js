@@ -42,7 +42,7 @@ const allUpperCase = (arr) => {
   let newArr = [];
   arr.forEach((str) => newArr.push(str.toUpperCase()));
   return newArr;
-
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
