@@ -40,9 +40,23 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 
 const allUpperCase = (arr) => {
   let newArr = [];
+
   arr.forEach((str) => newArr.push(str.toUpperCase()));
   return newArr;
+<<<<<<< HEAD
 };
+=======
+
+
+  arr.forEach(element => {
+    newArr.push (element.toUpperCase());
+  });
+  return newArr;
+
+};
+
+
+>>>>>>> 7b6c8322bd9b730854f3fc2ee33312359049ee1a
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -54,6 +68,7 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
+
   return word.toUpperCase() + '!';
 };
 
@@ -61,6 +76,18 @@ const speaker = (words, callback) => {
   let newWords = [];
   words.forEach((word) => newWords.push(greeting(word)));
   return newWords;
+
+  return (word.toUpperCase() + '!');
+};
+
+const speaker = (words, callback) => {
+  let newArr = [];
+
+  words.forEach(element => {
+    newArr.push(callback(element));
+  });
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -85,9 +112,16 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   for (let i = 0; i < times; i++) {
+
     addValues(arr, num);
   }
   return arr;
+
+    callback(arr,num);
+  }
+  return arr;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -109,6 +143,7 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
+
   let list=[];
   availableItems.forEach((item) => {
     if(item.available===true){
@@ -116,7 +151,19 @@ const createList = (availableItems) => {
     }
   });
   return list;
+
+  let newArr = [];
+  availableItems.forEach(item => {
+    if (item.available){
+      newArr.push(item.name);
+    }
+  });
+  return newArr;
+
 };
+//testing
+//testing 2
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
