@@ -8,6 +8,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 ------------------------------------------------------------------------------------------------ */
 
 function returnTen(str){
+  return str.split('').splice(-10);
 }
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,7 +52,9 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
-  // Solution code here...
+  let totalSumArr = matrix.flat(Infinity);
+
+  return totalSumArr.reduce((acc,value) => acc + value,0 );
 };
 
 
@@ -78,7 +81,16 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
+  const totalArr = [];
+  let totalSum = 0;
+  for (let i = 0; i < stores[0].length; i++) {
+    for (let j = 0; j < stores.length; j++) {
+      totalSum += stores[j][i];
+    }
+    totalArr.push(totalSum);
+    totalSum = 0;
+  }
+  return totalArr;
 
 };
 
@@ -93,7 +105,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 ------------------------------------------------------------------------------------------------ */
 
 const salesData = (hours, data) => {
-  // Solution code here...
+  return hours.map((hour, index) => ({ sales: `${data[index]} cookies`, time: hour }));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -118,7 +130,14 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
-  // Solution code here...
+  for (let i = 0; i < arr.length; i++)
+    if (arr[i].store === 'Pet store') {
+      for (let j = 0; j < arr[i].items.length; j++) {
+        if (arr[i].items[j].name === 'Treats') {
+          return arr[i].items[j].quantity;
+        }
+      }
+    }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -140,6 +159,8 @@ The top row of the board is considered row zero and row numbers increase as they
 ------------------------------------------------------------------------------------------------ */
 
 const battleship = (board, row, col) => {
+  return board + row + col;
+
   //  Solution code here...
 };
 
@@ -152,6 +173,7 @@ For example, the following input returns a product of 720: [[1,2], [3,4], [5,6]]
 ------------------------------------------------------------------------------------------------ */
 
 const calculateProduct = (numbers) => {
+  return numbers;
   // Solution code here...
 };
 
@@ -172,6 +194,7 @@ const weeklyTemperatures = [
 ];
 
 const averageDailyTemperature = (weather) => {
+  return weather;
   // Solution code here...
 };
 
@@ -193,6 +216,7 @@ let lowestWeeklyTemperatureData = [
 ];
 
 const lowestWeeklyAverage = (weather) => {
+  return weather;
   // Solution code here...
 };
 
@@ -210,6 +234,7 @@ For example, excel('1,1,1\n4,4,4\n9,9,9') returns [3, 12, 27].
 
 const excel = (str) => {
   // Solution code here...
+  return str;
 };
 
 /* ------------------------------------------------------------------------------------------------
