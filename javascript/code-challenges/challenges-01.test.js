@@ -42,6 +42,18 @@ const allUpperCase = (arr) => {
   let newArr = [];
 
   arr.forEach((str) => newArr.push(str.toUpperCase()));
+
+
+  return newArr;
+
+};
+
+
+
+  arr.forEach(element => {
+    newArr.push (element.toUpperCase());
+  });
+
   return newArr;
 
 
@@ -51,6 +63,10 @@ const allUpperCase = (arr) => {
   // return newArr;
 
 };
+
+
+
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,6 +82,17 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = (word) => {
 
   return word.toUpperCase() + '!';
+
+
+};
+
+const speaker = (words, callback) => {
+  let newWords = [];
+  words.forEach((word) => newWords.push(greeting(word)));
+  return newWords;
+
+  return (word.toUpperCase() + '!');
+
 };
 
 
@@ -103,9 +130,20 @@ const addValues = (arr, value) => {
 const addNumbers = (num, arr, times, callback) => {
   for (let i = 0; i < times; i++) {
 
+
     callback(arr, num);
+
+    addValues(arr, num);
   }
   return arr;
+
+    callback(arr,num);
+
+  }
+  return arr;
+
+
+
 
 
 
@@ -131,6 +169,16 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
 
+
+
+
+  let list=[];
+  availableItems.forEach((item) => {
+    if(item.available===true){
+      list.push(item.name);
+    }
+  });
+  return list;
 
 
   let newArr = [];
