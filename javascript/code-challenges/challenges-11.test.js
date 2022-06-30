@@ -19,8 +19,13 @@ Becomes:
 ------------------------------------------------------------------------------------------------ */
 
 function transformToLis(obj){
-  // Solution code here...
-};
+  let objArr = Object.keys(obj).map((key) =>{
+    return (
+      `<li>${key}: ${obj[key]}</li>`
+    );
+  });
+  return objArr;
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -33,7 +38,15 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 ------------------------------------------------------------------------------------------------ */
 
 const count = (target, input) => {
-  // Solution code here...
+  return input.reduce((acc, curr) => {
+    const rowCount = curr.reduce((innerACC, innerCurr) => {
+      if (innerCurr === target) {
+        return innerACC + 1;
+      }
+      return innerACC;
+    }, 0);
+    return acc + rowCount;
+  },0);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,7 +80,9 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 ------------------------------------------------------------------------------------------------ */
 
 const divisibleByFiveTwoToThePower = (input) => {
-  // Solution code here...
+  return input.map(arr=>{
+    return arr.filter(elem=>typeof elem==='number'&&elem%5===0).map(filteredElem=>Math.pow(2,filteredElem));
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -149,7 +164,18 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 ------------------------------------------------------------------------------------------------ */
 
 let findShortest = (data) => {
-  // Solution code here...
+  let height=[];
+  data.forEach(obj=>height.push(parseInt(obj.height)));
+  let lowNum=height.reduce((a,b)=>{
+    return b<a?b:a;
+  });
+  let name='';
+  data.forEach(obj => {
+    if (obj.height===lowNum.toString()){
+      name=obj.name;
+    }
+  });
+  return name;
 };
 
 /* ------------------------------------------------------------------------------------------------
