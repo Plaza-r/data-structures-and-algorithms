@@ -155,9 +155,8 @@ You may also use other string or array methods.
 ------------------------------------------------------------------------------------------------ */
 
 const splitFoods = (recipe) => {
-  let result = [];
   // Solution code here...
-  return result;
+  return recipe;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -171,10 +170,12 @@ Return a new array containing just the verbs. For example, ['Mix until evenly di
 ------------------------------------------------------------------------------------------------ */
 
 const stepActions = (recipe) => {
-  let result = [];
+
   // Solution code here...
-  return result;
+  return recipe;
 };
+//tryin
+//checking
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 9 - Stretch Goal
@@ -190,6 +191,7 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const removeEvenValues = (arr) => {
+  return arr;
   // Solution code here...
 };
 
@@ -208,7 +210,9 @@ removeLastCharacters('Gregor', -2) returns 'Gregor'
 removeLastCharacters('Gregor', 9) returns ''
 ------------------------------------------------------------------------------------------------ */
 
-const removeLastCharacters = (str, numberOfCharacters) => {
+const removeLastCharacters = (str) => {
+  return str;
+
   // Solution code here...
 };
 
@@ -220,9 +224,9 @@ Write a function named totalSumCSV that, given a string of comma-separated value
 ------------------------------------------------------------------------------------------------ */
 
 const totalSumCSV = (str) => {
-  let total = 0;
+  //let total = 0;
   // Solution code here...
-  return total;
+  return str;
 };
 
 
@@ -235,6 +239,7 @@ For example, removeVowels('gregor') returns 'grgr'.
 ------------------------------------------------------------------------------------------------ */
 
 const removeVowels = (str) => {
+  return str;
   // Solution code here...
 };
 
@@ -249,6 +254,7 @@ Similarly, extractVowels('The quick brown fox') returns ['Th qck brwn fx', 'eioo
 ------------------------------------------------------------------------------------------------ */
 
 const extractVowels = (str) => {
+  return str;
   // Solution code here...
 };
 
@@ -267,7 +273,7 @@ describe('Testing challenge 1', () => {
   test('It should sort the star wars characters by height from tallest to shortest', () => {
     expect(sortStarWarsCharacters(starWarsPeople)[0]['name']).toStrictEqual('Luke Skywalker');
     expect(sortStarWarsCharacters(starWarsPeople)[2]['height']).toStrictEqual('96');
-  })
+  });
 });
 
 describe('Testing challenge 2', () => {
