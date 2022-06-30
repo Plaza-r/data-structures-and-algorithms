@@ -39,8 +39,19 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  // Solution code here...
+  let newArr = [];
+
+  arr.forEach((str) => newArr.push(str.toUpperCase()));
+  return newArr;
+
+
+  arr.forEach(element => {
+    newArr.push (element.toUpperCase());
+  });
+  return newArr;
+
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -53,11 +64,26 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  // Solution code here...
+
+  return word.toUpperCase() + '!';
 };
 
 const speaker = (words, callback) => {
-  // Solution code here...
+  let newWords = [];
+  words.forEach((word) => newWords.push(greeting(word)));
+  return newWords;
+
+  return (word.toUpperCase() + '!');
+};
+
+const speaker = (words, callback) => {
+  let newArr = [];
+
+  words.forEach(element => {
+    newArr.push(callback(element));
+  });
+  return newArr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -77,11 +103,21 @@ Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr, value) => {
-  // Solution code here...
+  arr.push(value);
 };
 
 const addNumbers = (num, arr, times, callback) => {
-  // Solution code here...
+  for (let i = 0; i < times; i++) {
+
+    addValues(arr, num);
+  }
+  return arr;
+
+    callback(arr,num);
+  }
+  return arr;
+
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -103,8 +139,27 @@ This function should use forEach to populate your grocery list based on the stor
 ------------------------------------------------------------------------------------------------ */
 
 const createList = (availableItems) => {
-  // Solution code here...
+
+  let list=[];
+  availableItems.forEach((item) => {
+    if(item.available===true){
+      list.push(item.name);
+    }
+  });
+  return list;
+
+  let newArr = [];
+  availableItems.forEach(item => {
+    if (item.available){
+      newArr.push(item.name);
+    }
+  });
+  return newArr;
+
 };
+//testing
+//testing 2
+
 
 /* ------------------------------------------------------------------------------------------------
 STRETCH - CHALLENGE 7
