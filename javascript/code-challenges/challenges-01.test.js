@@ -10,7 +10,7 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 
 const addOne = (arr) => {
   let newArr = [];
-  arr.forEach((num) => newArr.push(num +1));
+  arr.forEach((num) => newArr.push(num + 1));
   return newArr;
 };
 
@@ -42,15 +42,31 @@ const allUpperCase = (arr) => {
   let newArr = [];
 
   arr.forEach((str) => newArr.push(str.toUpperCase()));
+
+
   return newArr;
+
+};
+
 
 
   arr.forEach(element => {
     newArr.push (element.toUpperCase());
   });
+
   return newArr;
 
+
+  // arr.forEach(element => {
+  //   newArr.push (element.toUpperCase());
+  // });
+  // return newArr;
+
 };
+
+
+
+
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,6 +82,8 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = (word) => {
 
   return word.toUpperCase() + '!';
+
+
 };
 
 const speaker = (words, callback) => {
@@ -74,7 +92,10 @@ const speaker = (words, callback) => {
   return newWords;
 
   return (word.toUpperCase() + '!');
+
 };
+
+
 
 const speaker = (words, callback) => {
   let newArr = [];
@@ -109,13 +130,21 @@ const addValues = (arr, value) => {
 const addNumbers = (num, arr, times, callback) => {
   for (let i = 0; i < times; i++) {
 
+
+    callback(arr, num);
+
     addValues(arr, num);
   }
   return arr;
 
     callback(arr,num);
+
   }
   return arr;
+
+
+
+
 
 
 };
@@ -140,6 +169,9 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
 
+
+
+
   let list=[];
   availableItems.forEach((item) => {
     if(item.available===true){
@@ -148,9 +180,10 @@ const createList = (availableItems) => {
   });
   return list;
 
+
   let newArr = [];
   availableItems.forEach(item => {
-    if (item.available){
+    if (item.available) {
       newArr.push(item.name);
     }
   });
@@ -176,6 +209,7 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
+  return arr;
   // Solution code here...
 };
 
