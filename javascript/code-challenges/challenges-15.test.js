@@ -11,8 +11,10 @@ Write a function named screenForNames that takes in an array of strings and uses
 ------------------------------------------------------------------------------------------------ */
 
 const screenForNames = (arr) => {
-  // Solution code here...
-}
+  let regex = /^((Mr.)?(Mrs.)?(Ms.)?(Dr.)?) (\w+)$/gm;
+  let newArr = arr.filter(str => regex.test(str));
+  return newArr;
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -23,7 +25,9 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
-  return arr.map(string => string.));
+  return arr.map(str => {
+    return str.replace(str.charAt(0), str.charAt(0).toUpperCase());
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -98,7 +102,9 @@ let starWarsData = [{
 }];
 
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  let newArr = arr.filter(obj => obj.mass > 77);
+  newArr = newArr.map(obj => obj.name);
+  return newArr.join(' - ');
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -116,7 +122,19 @@ This data could be sorted by name or price.
 ------------------------------------------------------------------------------------------------ */
 
 const sortBy = (property, arr) => {
-  // Solution code here...
+  return arr.sort((a,b) => {
+    if(property === 'price'){
+      return a.price - b.price;
+    }
+    if (property === 'name'){
+      if(a.name > b.name){
+        return 1;
+      }
+      if(a.name < b.name){
+        return -1;
+      }
+    }
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,7 +150,8 @@ https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
 const isSecure = (url) => {
-  // Solution code here...
+  let regex = /(^https:\/\/)/;
+  return regex.test(url);
 };
 
 /* ------------------------------------------------------------------------------------------------
