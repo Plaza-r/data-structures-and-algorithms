@@ -7,6 +7,9 @@ class LinkedList:
         # initialization here
         self.head = None
 
+    def append(self, value):
+        self.head =Node(value, self.head)
+
     def __str__(self):
         text = ""
         current = self.head
