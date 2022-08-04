@@ -12,6 +12,9 @@ arguments: value, new value
 adds a new node with the given new value immediately after the first node that has the value specified
 
 ## whiteboard Process
-[challenge 6 whiteboard](challenge6whiteboard.png)
+### [challenge 6 whiteboard](challenge6whiteboard.png)
+[Challenge 7]()
+[Challenge 8]
+[Challenge 9]
 
-##
+### [Challenge 13 whiteboard](python/docs/stack_queue_brackets/codechallnege13.png)

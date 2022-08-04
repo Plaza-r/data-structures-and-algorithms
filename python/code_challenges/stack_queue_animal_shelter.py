@@ -14,7 +14,7 @@ class AnimalShelter:
 
     def dequeue(self, picked):
         if picked == "dog" and self.dogs:
-            return self.dogs.dequeue()f
+            return self.dogs.dequeue()
         if picked == "cat" and self.cats:
             return self.cats.dequeue()
 
