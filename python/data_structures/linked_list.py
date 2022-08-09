@@ -73,7 +73,7 @@ class LinkedList:
         while current and current.next:
 
         # start  head || beginning
-        current = self.head
+            current = self.head
 
         while current and current.next:
             # if current node has a value it looks for value
@@ -153,7 +153,7 @@ class LinkedList:
             current = current.next
 
 
-                break
+            break
             # was told danger
 
             else:
