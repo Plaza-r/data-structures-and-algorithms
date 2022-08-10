@@ -39,7 +39,7 @@ class BinaryTree:
         move(self.root, post_ordered_vals)
         return post_ordered_vals
 
-    def find_max(self):
+    def find_maximum_value(self):
         vals = self.post_order()
         max_value = vals[0]
         for value in vals:
