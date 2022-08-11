@@ -21,3 +21,10 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+-
+- [animalshelterReadme](python/docs/stack_queue_animal_shelter/README.md)
+- [linked list Insertions](python/docs/linked_list_insertions/README.md)
+- [linked list kth](python/docs/linked_list_kth/README.md)
+- [Max-tree](python/docs/tree_max/README.md)
+- [tree_bizz_buzz](python/docs/tree_fizz_buzz/codeChallenge18.png)
