@@ -153,13 +153,6 @@ class LinkedList:
             current = current.next
 
 
-            break
-            # was told danger
-
-            else:
-                current = current.next
-        else:
-            raise TargetError
 
     def insert_after(self, search_value, value):
 
