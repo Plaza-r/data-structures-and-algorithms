@@ -24,11 +24,13 @@ def test_example():
     }
 
     expected = [
-        ["fond", "enamored", "averse"],
-        ["wrath", "anger", "delight"],
         ["diligent", "employed", "idle"],
-        ["outfit", "garb", "NONE"],
+        ["fond", "enamored", "averse"],
         ["guide", "usher", "follow"],
+        ["outfit", "garb", "NONE"],
+        ["wrath", "anger", "delight"],
+
+
     ]
 
     actual = left_join(synonyms, antonyms)
