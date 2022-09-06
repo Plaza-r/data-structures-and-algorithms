@@ -31,3 +31,5 @@ class Edge:
     def __init__(self, vertex, weight):
         self.vertex = vertex
         self.weight = weight
+
+# adding this to see if i can push this graph up
