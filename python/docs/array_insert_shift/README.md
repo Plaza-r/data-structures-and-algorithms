@@ -2,13 +2,10 @@
 
 
 # Insert to Middle of an Array
-Write a function which takes in 2 parameters:
- a sorted array and the search key. return the
-index of the array’s element that is equal to the
-value of the search key
+Insert and shift an array in middle at index
 
 ## Whiteboard Process
-![array-insert-shift](array_insert_shift/array_insert_shift_WB.png)
+![array-insert-shift](./array-insert-shiftWhiteboard.png)
 
 ## Approach & Efficiency
 divide array length by 2 which gives middle index
