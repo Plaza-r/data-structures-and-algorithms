@@ -3,7 +3,7 @@
 Reverse input array
 
 ## Whiteboard Process
-![reverse-array](reversearraywhiteboard.png)
+![reverse-array](./reversearraywhiteboard.png)
 
 ## Approach & Efficiency
 Take input array make new array, loop throug array while removing last number to new array.
