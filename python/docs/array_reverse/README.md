@@ -3,7 +3,7 @@
 Reverse input array
 
 ## Whiteboard Process
-![reverse-array](python/docs/array_reverse/reversearray.png)
+![reverse-array](reversearraywhiteboard.png)
 
 ## Approach & Efficiency
 Take input array make new array, loop throug array while removing last number to new array.

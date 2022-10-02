@@ -1,19 +1,19 @@
 # Challenge 02 - Array-Insert-shift
 
-# Reverse an Array
-Reverese given Array
+
+# Insert to Middle of an Array
+Write a function which takes in 2 parameters:
+ a sorted array and the search key. return the
+index of the array’s element that is equal to the
+value of the search key
 
 ## Whiteboard Process
-![array-insert-shift](python/docs/array_reverse/reversearray.png)
+![array-insert-shift](array_insert_shift/array_insert_shift_WB.png)
 
 ## Approach & Efficiency
-Def function takes single array as parameter
+divide array length by 2 which gives middle index
+iterate through input array while adding new element to new array
 
-build blank output array
-loop through input array backward, appending values to output array
-return output array
-I took this approach because it seemed the most effiecent at the time.
+Space 0(N) because steps increase with number of inputs
 
-Time 0(N) it iterates through array once
-
-Space 0(N) stores output in memory which is length of input array
+Time 0(N) because it will take more time if more inputs
